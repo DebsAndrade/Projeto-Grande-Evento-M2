@@ -13,7 +13,7 @@
 ## Tema Escolhido
 **O Grande Evento** — Site para um **torneio desportivo (Futebol)**, representando a *Liga dos Titãs 2026*, com foco na organização de horários e arenas e na interação com o utilizador.
 
-<ins>Link do Repositório:</ins> [O Grande Evento](https://github.com/DebsAndrade/Projeto-Grande-Evento-M2.git)
+**Link do Repositório:** [O Grande Evento](https://github.com/DebsAndrade/Projeto-Grande-Evento-M2.git)
 
 ---
  
