@@ -32,8 +32,7 @@ O projeto foi desenvolvido com especial atenção à organização visual, acess
 
 2. Abrir a pasta do projeto:
    ```bash
-
-cd Projeto-Grande-Evento-M2
+   cd Projeto-Grande-Evento-M2
 
 
 3. Abrir o ficheiro index.html no navegador:
