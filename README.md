@@ -3,6 +3,7 @@
 ## Identificação do Projeto
 
 **Projeto Final:** Web Experience
+
 **Módulo M2:** Fundamentos de Programação Web
 
 **Autoras:**
@@ -13,7 +14,7 @@
 ## Tema Escolhido
 **O Grande Evento** — Site para um **torneio desportivo (Futebol)**, representando a *Liga dos Titãs 2026*, com foco na organização de horários e arenas e na interação com o utilizador.
 
-**Link do Repositório:** [O Grande Evento](https://github.com/DebsAndrade/Projeto-Grande-Evento-M2.git)
+**Link do Repositório:** [<O Grande Evento>](https://github.com/DebsAndrade/Projeto-Grande-Evento-M2.git)
 
 ---
  
@@ -35,7 +36,7 @@ O projeto foi desenvolvido com especial atenção à organização visual, acess
    cd Projeto-Grande-Evento-M2
 
 
-3. Abrir o ficheiro index.html no navegador:
+3. Abrir o ficheiro `index.html` no navegador:
 
   Duplo clique no ficheiro ou utilizar a extensão Live Server no Visual Studio Code
 
