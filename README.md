@@ -1,7 +1,7 @@
 # O Grande Evento - Liga dos Titãs
----
+
 ## Identificação do Projeto
----
+
 **Projeto Final:** Web Experience
 **Módulo M2:** Fundamentos de Programação Web
 
@@ -13,10 +13,10 @@
 ## Tema Escolhido
 **O Grande Evento** — Site para um **torneio desportivo (Futebol)**, representando a *Liga dos Titãs 2026*, com foco na organização de horários e arenas e na interação com o utilizador.
 
-<ins>Link do Repositório:</ins> [<O Grande Evento>](https://github.com/DebsAndrade/Projeto-Grande-Evento-M2.git)
+<ins>Link do Repositório:</ins> [O Grande Evento](https://github.com/DebsAndrade/Projeto-Grande-Evento-M2.git)
 
 ---
-
+ 
 ## Descrição do Projeto
 
 O Grande Evento é uma página web que apresenta toda a informação relevante sobre um evento de grande escala, incluindo horários, arenas e bilhetes.
@@ -31,13 +31,13 @@ O projeto foi desenvolvido com especial atenção à organização visual, acess
    git clone https://github.com/DebsAndrade/Projeto-Grande-Evento-M2.git
 
 2. Abrir a pasta do projeto:
-   ```bash
+
    cd Projeto-Grande-Evento-M2
 
 
 3. Abrir o ficheiro index.html no navegador:
 
- - Duplo clique no ficheiro ou utilizar a extensão Live Server no Visual Studio Code
+  Duplo clique no ficheiro ou utilizar a extensão Live Server no Visual Studio Code
 
 
 ---
