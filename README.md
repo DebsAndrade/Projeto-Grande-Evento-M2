@@ -14,7 +14,7 @@
 ## Tema Escolhido
 **O Grande Evento** — Site para um **torneio desportivo (Futebol)**, representando a *Liga dos Titãs 2026*, com foco na organização de horários e arenas e na interação com o utilizador.
 
-**Link do Repositório:** [<O Grande Evento>](https://github.com/DebsAndrade/Projeto-Grande-Evento-M2.git)
+**Link do Repositório:** [O Grande Evento](https://github.com/DebsAndrade/Projeto-Grande-Evento-M2.git)
 
 ---
  
@@ -38,7 +38,7 @@ O projeto foi desenvolvido com especial atenção à organização visual, acess
 
 3. Abrir o ficheiro `index.html` no navegador:
 
-  Duplo clique no ficheiro ou utilizar a extensão Live Server no Visual Studio Code
+   Duplo clique no ficheiro ou utilizar a extensão Live Server no Visual Studio Code
 
 
 ---
@@ -47,7 +47,7 @@ O projeto foi desenvolvido com especial atenção à organização visual, acess
 
 * Foi utilizado CSS Grid (via classes do Tailwind) para organizar o horário dos eventos;
 
-* A grelha divide os eventos por arenas e horários, permitindo uma leitura clara:
+* A grelha divide os eventos por arenas e horários, permitindo uma leitura clara;
 
 * A estrutura adapta-se a diferentes tamanhos de ecrã, garantindo responsividade.
 
@@ -55,7 +55,7 @@ O projeto foi desenvolvido com especial atenção à organização visual, acess
 
 * Implementado um sistema de filtro por Arena A e Arena B;
 
-* O utilizador consegue visualizar apenas os eventos relevantes, reduzindo a complexidade da informação.
+* O utilizador consegue visualizar apenas os eventos relevantes, reduzindo a complexidade da informação;
 
 * A funcionalidade melhora significativamente a experiência de navegação.
 
