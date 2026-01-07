@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="pt-PT">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Liga dos Titãs 2026</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    />
+
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            fontFamily: {
+              oswald: ["Oswald", "sans-serif"],
+            },
+          },
+        },
+      };
+    </script>
+  </head>
+  <body class="font-oswald relative">
+    <header
+      class="bg-green-900 text-white p-4 flex justify-between items-center sticky top-0 z-40"
+    >
+      <h1 class="text-lg font-bold">Liga dos Titãs 2026</h1>
+      <button
+        id="comprarIngressos"
+        class="bg-yellow-400 text-green-800 px-4 py-2 rounded-xl hover:bg-green-200 font-bold transition-colors"
+      >
+        Comprar Bilhete
+      </button>
+    </header>
+
+    <main class="pb-6 bg-green-50 min-h-screen">
+      <section
+        class="text-gray-800 p-6 flex flex-col items-center justify-center"
+      >
+        <h2 class="text-4xl mb-4">Sobre o Evento</h2>
+        <p class="text-xl text-center max-w-2xl">
+          A Liga dos Titãs 2026 é o maior evento de Futebol do ano, reunindo os
+          melhores jogadores e equipes de todo o mundo.
+        </p>
+      </section>
+
+      <section class="flex justify-center gap-4 py-8">
+        <button
+          onclick="filterEvents('todos')"
+          class="px-4 py-2 border-2 border-green-800 text-green-800 rounded-xl hover:text-white hover:bg-green-400 transition-colors"
+        >
+          Todos
+        </button>
+        <button
+          onclick="filterEvents('arena-a')"
+          class="px-4 py-2 border-2 border-green-800 text-green-800 rounded-xl hover:text-white hover:bg-green-400 transition-colors"
+        >
+          Arena A
+        </button>
+        <button
+          onclick="filterEvents('arena-b')"
+          class="px-4 py-2 border-2 border-green-800 text-green-800 rounded-xl hover:text-white hover:bg-green-400 transition-colors"
+        >
+          Arena B
+        </button>
+      </section>
+
+      <section
+        class="px-4 grid md:grid-cols-2 gap-6 mb-8 text-gray-800 max-w-5xl mx-auto"
+      >
+        <article
+          class="event-card border-l-4 border-green-800 bg-white rounded-xl p-4 shadow-sm"
+          data-category="arena-a"
+        >
+          <span class="text-green-800 font-bold mb-2 block">10h Arena A</span>
+          <h3 class="text-lg font-bold mb-2">Torneio de Abertura</h3>
+          <p class="text-gray-600">
+            <i class="fa-regular fa-calendar mr-2"></i>15 de Março de 2026
+          </p>
+          <p class="text-gray-600">
+            <i class="fa-solid fa-location-dot mr-2"></i>Lisboa
+          </p>
+        </article>
+
+        <article
+          class="event-card border-l-4 border-green-800 bg-white rounded-xl p-4 shadow-sm"
+          data-category="arena-b"
+        >
+          <span class="text-green-800 font-bold mb-2 block">10h Arena B</span>
+          <h3 class="text-lg font-bold mb-2">Torneio de Abertura</h3>
+          <p class="text-gray-600">
+            <i class="fa-regular fa-calendar mr-2"></i>15 de Março de 2026
+          </p>
+          <p class="text-gray-600">
+            <i class="fa-solid fa-location-dot mr-2"></i>Lisboa
+          </p>
+        </article>
+
+        <article
+          class="event-card border-l-4 border-green-800 bg-white rounded-xl p-4 shadow-sm"
+          data-category="arena-a"
+        >
+          <span class="text-green-800 font-bold mb-2 block">14h Arena A</span>
+          <h3 class="text-lg font-bold mb-2">Final Mundial</h3>
+          <p class="text-gray-600">
+            <i class="fa-regular fa-calendar mr-2"></i>15 de Março de 2026
+          </p>
+          <p class="text-gray-600">
+            <i class="fa-solid fa-location-dot mr-2"></i>Lisboa
+          </p>
+        </article>
+
+        <article
+          class="event-card border-l-4 border-green-800 bg-white rounded-xl p-4 shadow-sm"
+          data-category="arena-b"
+        >
+          <span class="text-green-800 font-bold mb-2 block">14h Arena B</span>
+          <h3 class="text-lg font-bold mb-2">Final Mundial</h3>
+          <p class="text-gray-600">
+            <i class="fa-regular fa-calendar mr-2"></i>15 de Março de 2026
+          </p>
+          <p class="text-gray-600">
+            <i class="fa-solid fa-location-dot mr-2"></i>Lisboa
+          </p>
+        </article>
+
+        <article
+          class="event-card border-l-4 border-green-800 bg-white rounded-xl p-4 shadow-sm"
+          data-category="arena-a"
+        >
+          <span class="text-green-800 font-bold mb-2 block">20h Arena A</span>
+          <h3 class="text-lg font-bold mb-2">Festa de Encerramento</h3>
+          <p class="text-gray-600">
+            <i class="fa-regular fa-calendar mr-2"></i>15 de Março de 2026
+          </p>
+          <p class="text-gray-600">
+            <i class="fa-solid fa-location-dot mr-2"></i>Lisboa
+          </p>
+        </article>
+
+        <article
+          class="event-card border-l-4 border-green-800 bg-white rounded-xl p-4 shadow-sm"
+          data-category="arena-b"
+        >
+          <span class="text-green-800 font-bold mb-2 block">20h Arena B</span>
+          <h3 class="text-lg font-bold mb-2">Festa de Encerramento</h3>
+          <p class="text-gray-600">
+            <i class="fa-regular fa-calendar mr-2"></i>15 de Março de 2026
+          </p>
+          <p class="text-gray-600">
+            <i class="fa-solid fa-location-dot mr-2"></i>Lisboa
+          </p>
+        </article>
+      </section>
+    </main>
+
+    <footer
+      class="flex flex-col items-center justify-center gap-4 p-6 bg-green-900 text-white"
+    >
+      <div class="flex items-center gap-2">
+        <i class="fa-solid fa-phone"></i>
+        <p>Contato (+351) 919 929 929</p>
+      </div>
+      <div class="text-center text-sm opacity-80">
+        <p>&copy; 2026 Liga dos Titãs. Todos os direitos reservados.</p>
+        <p class="mt-1">Débora Andrade & Gabriella Maia</p>
+      </div>
+    </footer>
+
+    <div
+      id="ticketModal"
+      style="display: none"
+      class="fixed inset-0 bg-black bg-opacity-60 justify-center items-center z-50 p-4"
+    >
+      <div
+        class="bg-white rounded-xl shadow-2xl w-full max-w-md overflow-hidden animate-fade-in"
+      >
+        <div
+          class="bg-green-900 p-4 flex justify-between items-center text-white"
+        >
+          <h3 class="text-xl font-bold">Comprar Bilhete</h3>
+          <button id="closeModal" class="hover:text-yellow-400">
+            <i class="fa-solid fa-xmark text-xl"></i>
+          </button>
+        </div>
+
+        <div class="p-6">
+          <p class="mb-4 text-gray-600">
+            Preencha os dados para reservar o seu lugar na Liga dos Titãs!
+          </p>
+          <form id="ticketForm" class="flex flex-col gap-3">
+            <input
+              required
+              type="text"
+              placeholder="O teu nome"
+              class="border border-gray-300 p-2 rounded focus:outline-none focus:border-green-800"
+            />
+
+            <input
+              required
+              type="email"
+              placeholder="O teu email"
+              class="border border-gray-300 p-2 rounded focus:outline-none focus:border-green-800"
+            />
+
+            <label class="text-sm font-bold text-gray-700 mt-2"
+              >Escolha o seu bilhete:</label
+            >
+            <select
+              id="ticketType"
+              class="border border-gray-300 p-2 rounded focus:outline-none focus:border-green-800 bg-white"
+            >
+              <option value="15">Bilhete Arena (15€)</option>
+              <option value="35">Passe Completo (35€)</option>
+            </select>
+
+            <label class="text-sm font-bold text-gray-700 mt-2"
+              >Quantidade de bilhete:</label
+            >
+            <select
+              id="ticketQuantity"
+              class="border border-gray-300 p-2 rounded focus:outline-none focus:border-green-800 bg-white"
+            >
+              <option value="1">1</option>
+              <option value="2">2</option>
+              <option value="3">3</option>
+              <option value="4">4</option>
+              <option value="5">5</option>
+              <option value="6">6</option>
+            </select>
+
+            <div
+              class="flex justify-between items-center bg-gray-100 p-3 rounded text-green-900 font-bold"
+            >
+              <span>Total a pagar:</span>
+              <span id="priceDisplay" class="text-xl">15€</span>
+            </div>
+
+            <button
+              type="submit"
+              class="bg-green-800 text-white py-2 rounded hover:bg-green-700 transition mt-2"
+            >
+              Confirmar Compra
+            </button>
+          </form>
+        </div>
+      </div>
+    </div>
+
+    <script src="assets/js/script.js"></script>
+  </body>
+</html>
